@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/donation.css">
+    <link rel="stylesheet" href="css/duvidas.css">
     <title>M.A.S.A</title>
 </head>
 <body>
-        <div class="mobile-frame">
-            <div class="mobile-screen">
-                <div class="screen-content">
-                    <div class="top">
-                    <div class="topo">
-                        <h3>Localize nossos parceiros</h3>
+    <div class="mobile-frame">
+        <div class="mobile-screen">
+            <div class="screen-content">
+              <div>      
+              <div class="topo">
+                        <h3>Envie suas dúvidas</h3>
                     </div>
-                    <img src="images/donation.png" alt="">
-                </div>
-                    <div class="midle">
-                        <h1>Sistema de doações</h1>
-                        <p>No M.A.S.A, acreditamos que toda criança merece comer bem para aprender melhor. Você pode ajudar!</p>
+                    <div class="form-container">
+                        <h2>Envie sua dúvida</h2>
+                        <form id="contactForm">
+                            <textarea id="doubtText" placeholder="Escreva sua dúvida aqui..." required></textarea>
+                            <button type="button" onclick="sendEmail()">Enviar E-mail</button>
+                        </form>
                     </div>
-                    <a href="partner.html"><button>Doar</button></a>
+                  </div> 
                     <div class="rodapé">
                         <ul class="footer-icons">
                             <li><a href="form.html" class="icon"><img src="images/home.png" alt=""></a></li>
@@ -28,11 +29,12 @@
                             <li><a href="donations.html" class="icon"><img src="images/hearth.png" alt=""></a></li>
                             <li><a href="duvidas.html" class="icon"><img src="images/planner.png" alt=""></a></li>
                             <li><a href="partner.html" class="icon"><img src="images/headset.png" alt=""></a></li>
-                        </ul>
-                    </div>    
+                        </ul>    
+                    </div>
                 </div>
             </div>
         </div>
-   <script src="js/script.js"></script>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
