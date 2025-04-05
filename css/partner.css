@@ -25,6 +25,7 @@ body {
   height: 100%;
   border-radius: 36px;
   background-color: #ffdc4f;
+  border: solid 5px black;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -169,10 +170,8 @@ button:hover {
 
 ul {
   list-style: none;
-  border-radius: 10px 10px 0 0;
   width: 100%;
   padding: 20px;
-  background: white;
 }
 
 ul li {
@@ -190,21 +189,23 @@ ul li a {
   text-decoration: none;
   text-align: center;
   font-size: 12px;
-  background: #22438c;
+  background: #5c913b;
   border-radius: 8px;
+  transition: 0.5s;
 }
 
 ul li a:hover {
-  background: #d40e16;
+  background: #D40E16;
 }
 
 ul li ul.dropdown {
   width: 100%;
-  background: #22438c;
+  background: #5c913b;
   position: absolute;
   z-index: 999;
   display: none;
   border-radius: 8px;
+  transition: 0.5s;
 }
 
 ul li:hover ul.dropdown {
@@ -219,10 +220,11 @@ ul li ul.dropdown li a {
   padding: 10px;
   font-size: 10px;
   border: solid 2px black;
+  transition: 0.5s;
 }
 
 ul li ul.dropdown li a:hover {
-  background: #d40e16;
+  background: #D40E16;
 }
 
 .mapBox{

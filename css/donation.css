@@ -25,6 +25,7 @@ body {
   height: 100%;
   border-radius: 36px;
   background-color: #ffdc4f;
+  border: solid 5px black;
   overflow: hidden;
   display: flex;
   justify-content: center;
