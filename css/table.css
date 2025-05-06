@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: black;
 }
 
 body {
@@ -15,11 +16,10 @@ body {
 .mobile-frame {
   width: 300px;
   height: 600px;
-  background-color: #333;
   border-radius: 36px;
-  position: relative;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
 .mobile-screen {
   width: 100%;
   height: 100%;
@@ -28,211 +28,84 @@ body {
   border: solid 5px black;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.screen-content {
-  display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  gap: 58px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
-.mobile-screen::before {
-  content: "";
-  width: 60px;
-  height: 10px;
-  background-color: #333;
-  border-radius: 5px;
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* Bottom home button */
-.mobile-frame::after {
-  content: "";
-  width: 80px;
-  height: 5px;
-  background-color: #333;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-img {
-  width: 250px;
-  height: 100%;
-  transition: 0.5s;
-}
-
-img:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.container {
-  font-size: 5px;
-  padding: 50px;
-  background: white;
-}
-
-button {
-  background: #5c913b;
-  border: none;
-  border-radius: 15px;
-  padding: 5px;
-  color: white;
-  width: 150px;
-  transition: 0.5s;
-}
-
-button:hover {
-  background: #d40e16;
-  border: none;
-  border-radius: 15px;
-  padding: 5px;
-  color: white;
-  width: 150px;
-  cursor: pointer;
-}
-
-button {
-  background: #5c913b;
-  border: none;
-  border-radius: 15px;
-  padding: 5px;
-  color: white;
-  width: 150px;
-  transition: 0.5s;
-}
-
-button:hover {
-  background: #d40e16;
-  border: none;
-  border-radius: 15px;
-  padding: 5px;
-  color: white;
-  width: 150px;
-  cursor: pointer;
-}
-
-/* Estilo da lista de ícones */
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  background: #d40e16;
-  gap: 2px;
-  padding: 5px;
-}
-
-/* Estilo dos ícones */
-.footer-icons .icon {
-  transition: color 0.3s ease;
-}
-
-/* Efeito de hover nos ícones */
-.footer-icons .icon:hover {
-  background: #73c043;
-}
-
-.footer-icons .icon img {
-  width: 20px;
-}
-
-.footer-icons a {
-  background: inherit;
-}
-
-.rodapé {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 65px;
 }
 
 .topo {
-  background: #73c043;
-  padding: 10px;
+  background: #73C043;
+  padding: 45px;
   width: 100%;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+}
+
+h3{
   color: white;
 }
 
-/* Dropdown menu styling */
-ul {
-  list-style: none;
-  border-radius: 10px 10px 0 0;
-  width: 100%;
-  padding: 20px;
-  background: white;
-}
-
-ul li {
+.content{
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  position: relative;
-  width: 100%;
+  align-items: center;
+  gap: 20px;
+  color: black;
+  padding: 10px;
 }
 
-ul li a {
-  display: block;
-  padding: 15px 20px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
+table{
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  padding: 2px;
+  height: 100%;
+  background: white;
+  border-radius: 10px;
+}
+
+button {
+  background: #5c913b;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  color: white;
+  width: 150px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #d40e16;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  color: white;
+  width: 150px;
+  cursor: pointer;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  background: #5c913b;
+  padding: 5px;
+  list-style: none;
+}
+
+.footer-icons li a{
+  display: flex;
+  justify-content: center;
+  background: #5c913b;
+  padding: 10px;
+  border-radius: 10px;
   font-size: 12px;
-  background: #22438c;
-  border-radius: 8px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.footer-icons li a img{
+  width: 50%;
 }
 
 ul li a:hover {
-  background: #d40e16;
-}
-
-ul li ul.dropdown {
-  width: 100%;
-  background: #22438c;
-  position: absolute;
-  z-index: 999;
-  display: none;
-  border-radius: 8px;
-}
-
-ul li:hover ul.dropdown {
-  display: block;
-}
-
-ul li ul.dropdown li {
-  display: block;
-}
-
-/* Dropdown item hover effect */
-ul li ul.dropdown li a {
-  padding: 10px;
-  font-size: 10px;
-  border: solid 2px black;
-}
-
-ul li ul.dropdown li a:hover {
-  background: #d40e16;
+  background: #D40E16;
 }

@@ -1,14 +1,14 @@
 const index = document.getElementById("home");
-const home = document.getElementById("form");
-const logoImg = document.getElementById("logo-img"); // Agora o ID está corrigido
-const avançar = document.getElementById("login");
+const home = document.getElementById("forms");
+const logo = document.getElementById("logo"); 
+const login = document.getElementById("login")
 
-avançar.addEventListener("click", () => {
-    console.log("Avançar clicado");
-    window.location.href = "form.html";
+login.addEventListener("click", () => {
+  window.location.href = "forms.html"; 
 });
 
-index.addEventListener("click", () => {
+
+logo.addEventListener("click", () => {
     window.location.href = "home.html";
 });
 
