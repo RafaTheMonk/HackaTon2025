@@ -89,6 +89,12 @@ button:hover {
   cursor: pointer;
 }
 
+.topic{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .footer-icons {
   display: flex;
   justify-content: space-around;
